@@ -1,6 +1,6 @@
 import re;
 
-puzzleInput = open("advent-of-code/2023/day-1/puzzle-input.md", "r");
+puzzleInput = open("advent-of-code/2023/day-1/puzzle-input", "r");
 
 def solution():
     n = ("".join(re.findall("[0-9]+", puzzleInput.readline())));
