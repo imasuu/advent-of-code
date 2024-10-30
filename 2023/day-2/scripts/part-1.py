@@ -15,7 +15,7 @@ def solution():
     return a;
 
 def Convert(string):
-    li = list(string.split(" "))
+    li = list(string.split(" "));
     return li;
 
 def GetAndCheck():
@@ -27,36 +27,36 @@ def GetAndCheck():
     for i in range(0, len(values)):
         result.append(values[i] + colours[i]);
     
-    matched_indexes = []
-    i = 0
-    length = len(result)
+    matched_indexes = [];
+    i = 0;
+    length = len(result);
     while i < length:
         if re.match("[0-9]+red", result[i]):
-            matched_indexes.append(i)
-        i += 1
-    red = []
+            matched_indexes.append(i);
+        i += 1;
+    red = [];
     for j in range(0, len(matched_indexes)):
         red.append(result[matched_indexes[j]]);
     
-    matched_indexes = []
-    i = 0
-    length = len(result)
+    matched_indexes = [];
+    i = 0;
+    length = len(result);
     while i < length:
         if re.match("[0-9]+blue", result[i]):
-            matched_indexes.append(i)
-        i += 1
-    blue = []
+            matched_indexes.append(i);
+        i += 1;
+    blue = [];
     for j in range(0, len(matched_indexes)):
         blue.append(result[matched_indexes[j]]);
     
-    matched_indexes = []
-    i = 0
-    length = len(result)
+    matched_indexes = [];
+    i = 0;
+    length = len(result);
     while i < length:
         if re.match("[0-9]+green", result[i]):
-            matched_indexes.append(i)
-        i += 1
-    green = []
+            matched_indexes.append(i);
+        i += 1;
+    green = [];
     for j in range(0, len(matched_indexes)):
         green.append(result[matched_indexes[j]]);
     
@@ -79,7 +79,6 @@ def GetAndCheck():
 def GetID():
     return int(line[5:line.index(":")]);
 
-#make it loopable
 ans = 0;
 for i in range(0, 100):
     ans += solution();
